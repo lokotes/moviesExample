@@ -99,6 +99,10 @@
 		9A8AD9222609325E00F19DB0 /* moviesExample */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD95C2609374A00F19DB0 /* Model */,
+				9A8AD95B2609371C00F19DB0 /* Service */,
+				9A8AD95A260936CA00F19DB0 /* DataSource */,
+				9A8AD9532609367400F19DB0 /* Login */,
 				9A8AD9232609325E00F19DB0 /* AppDelegate.swift */,
 				9A8AD9252609325E00F19DB0 /* SceneDelegate.swift */,
 				9A8AD9272609325E00F19DB0 /* ViewController.swift */,
@@ -126,6 +130,66 @@
 				9A8AD9472609326500F19DB0 /* Info.plist */,
 			);
 			path = moviesExampleUITests;
+			sourceTree = "<group>";
+		};
+		9A8AD9532609367400F19DB0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD959260936BC00F19DB0 /* Router */,
+				9A8AD958260936AF00F19DB0 /* Presenter */,
+				9A8AD9562609369200F19DB0 /* VIew */,
+				9A8AD9542609367C00F19DB0 /* Interactor */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9A8AD9542609367C00F19DB0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9A8AD9562609369200F19DB0 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		9A8AD958260936AF00F19DB0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A8AD959260936BC00F19DB0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9A8AD95A260936CA00F19DB0 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		9A8AD95B2609371C00F19DB0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9A8AD95C2609374A00F19DB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
