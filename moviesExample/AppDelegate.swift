@@ -14,12 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let navigation = UINavigationController(rootViewController: UIViewController())
+        let viewController = LoginRouter().createView()
+        let navigation = UINavigationController(rootViewController: viewController)
         self.window?.rootViewController = navigation
 
         window!.makeKeyAndVisible()
-        navigation
+        
         
         return true
     }

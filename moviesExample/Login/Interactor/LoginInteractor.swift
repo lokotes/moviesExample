@@ -12,6 +12,11 @@ class LoginInteractor: LoginInteractorProtocol {
     var presenter: LoginPresenterProtocol?
     
     func validateCredentials(user: String, password: String) {
+        if user.MD5() == Constants.userName && password.MD5() == Constants.password {
+            presenter?.validateSuccessLogin()
+        }else{
+            presenter?.failInValidateCredentials()
+        }
     }
     
     

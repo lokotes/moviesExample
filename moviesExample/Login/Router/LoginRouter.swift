@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LoginSearchRouter: LoginRouterProtocol {
+class LoginRouter: LoginRouterProtocol {
     
     func createView() -> UIViewController {
         let view = mainStoryboard.instantiateViewController(withIdentifier: "loginViewControllerID") as? LoginViewController

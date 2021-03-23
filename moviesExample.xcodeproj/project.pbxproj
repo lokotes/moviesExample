@@ -22,6 +22,7 @@
 		9A8AD9672609421400F19DB0 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD9662609421400F19DB0 /* LoginInteractor.swift */; };
 		9A8AD9692609981F00F19DB0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD9682609981F00F19DB0 /* Utils.swift */; };
 		9A8AD96D2609997700F19DB0 /* +String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD96C2609997700F19DB0 /* +String.swift */; };
+		9A8AD96F260999E900F19DB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD96E260999E900F19DB0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		9A8AD9662609421400F19DB0 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		9A8AD9682609981F00F19DB0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9A8AD96C2609997700F19DB0 /* +String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+String.swift"; sourceTree = "<group>"; };
+		9A8AD96E260999E900F19DB0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				9A8AD92C2609326500F19DB0 /* Assets.xcassets */,
 				9A8AD92E2609326500F19DB0 /* LaunchScreen.storyboard */,
 				9A8AD9312609326500F19DB0 /* Info.plist */,
+				9A8AD96E260999E900F19DB0 /* Constants.swift */,
 			);
 			path = moviesExample;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A8AD9652609420600F19DB0 /* LoginViewController.swift in Sources */,
+				9A8AD96F260999E900F19DB0 /* Constants.swift in Sources */,
 				9A8AD963260941FA00F19DB0 /* LoginPresenter.swift in Sources */,
 				9A8AD96D2609997700F19DB0 /* +String.swift in Sources */,
 				9A8AD9692609981F00F19DB0 /* Utils.swift in Sources */,
