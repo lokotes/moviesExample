@@ -12,7 +12,6 @@ class LoginInteractor: LoginInteractorProtocol {
     var presenter: LoginPresenterProtocol?
     
     func validateCredentials(user: String, password: String) {
-        if user
     }
     
     
