@@ -11,6 +11,8 @@ import UIKit
 
 class LoginRouter: LoginRouterProtocol {
     
+    var view: LoginViewController?
+    
     func createView() -> UIViewController {
         let view = mainStoryboard.instantiateViewController(withIdentifier: "loginViewControllerID") as? LoginViewController
         
@@ -25,7 +27,7 @@ class LoginRouter: LoginRouterProtocol {
         presenter.interactor = interactor
         presenter.router = router
         interactor.presenter = presenter
-        
+        self.view = view
         return view!
     }
     
@@ -34,7 +36,7 @@ class LoginRouter: LoginRouterProtocol {
     }
     
     func goToHomeSearch() {
-        
+        view?.navigationController?.pushViewController(MovieSearchRouter().createView(), animated: true)
     }
     
 }

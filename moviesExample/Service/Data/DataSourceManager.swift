@@ -18,12 +18,12 @@ class DataSourceManager: MoviesDataSourceProtocol {
     
     private let dataTransferService: DataTransferService
 
-    init(dataTransferService: DataTransferService) {
+    init() {
         self.dataTransferService = AppConfigurationService.shared.apiDataTransferService
     }
     
     func fetchMoviesInfo(searchText: String, page: Int, callbackHandler: @escaping CustomResponse<MoviesResponse>) {
-        let endpoint = APIEndpoints.getMovies(with: MoviesQueryParam(searchText: searchText, api_key: "2696829a81b1b5827d515ff121700838", page: page))
+        let endpoint = APIEndpoints.getMovies(with: MoviesQueryParam(query: searchText, api_key: "2696829a81b1b5827d515ff121700838", page: page))
             _ = self.dataTransferService.request(with: endpoint) { result in
                 switch result {
                 case .success(let response):

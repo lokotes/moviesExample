@@ -32,6 +32,12 @@
 		9A8AD985260A50A800F19DB0 /* MoviesQueryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD984260A50A800F19DB0 /* MoviesQueryParam.swift */; };
 		9A8AD989260A51A600F19DB0 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD988260A51A600F19DB0 /* MoviesResponse.swift */; };
 		9A8AD98B260A587500F19DB0 /* DataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD98A260A587500F19DB0 /* DataSourceManager.swift */; };
+		9A8AD994260A72F600F19DB0 /* MovieSearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD993260A72F600F19DB0 /* MovieSearchProtocol.swift */; };
+		9A8AD996260A740B00F19DB0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD995260A740B00F19DB0 /* Movie.swift */; };
+		9A8AD998260A759400F19DB0 /* MovieSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD997260A759400F19DB0 /* MovieSearchRouter.swift */; };
+		9A8AD99A260A761C00F19DB0 /* MovieSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD999260A761C00F19DB0 /* MovieSearchInteractor.swift */; };
+		9A8AD99C260A767E00F19DB0 /* MovieSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD99B260A767E00F19DB0 /* MovieSearchPresenter.swift */; };
+		9A8AD99E260A7C1A00F19DB0 /* MovieSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD99D260A7C1A00F19DB0 /* MovieSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,12 @@
 		9A8AD984260A50A800F19DB0 /* MoviesQueryParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesQueryParam.swift; sourceTree = "<group>"; };
 		9A8AD988260A51A600F19DB0 /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
 		9A8AD98A260A587500F19DB0 /* DataSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceManager.swift; sourceTree = "<group>"; };
+		9A8AD993260A72F600F19DB0 /* MovieSearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchProtocol.swift; sourceTree = "<group>"; };
+		9A8AD995260A740B00F19DB0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9A8AD997260A759400F19DB0 /* MovieSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchRouter.swift; sourceTree = "<group>"; };
+		9A8AD999260A761C00F19DB0 /* MovieSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchInteractor.swift; sourceTree = "<group>"; };
+		9A8AD99B260A767E00F19DB0 /* MovieSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchPresenter.swift; sourceTree = "<group>"; };
+		9A8AD99D260A7C1A00F19DB0 /* MovieSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				9A8AD986260A50F400F19DB0 /* Entities */,
+				9A8AD995260A740B00F19DB0 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,8 +332,54 @@
 		9A8AD98D260A668E00F19DB0 /* MovieSearch */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD992260A72B300F19DB0 /* Interactor */,
+				9A8AD991260A72A900F19DB0 /* View */,
+				9A8AD990260A72A300F19DB0 /* Presenter */,
+				9A8AD98F260A729A00F19DB0 /* Router */,
+				9A8AD98E260A725E00F19DB0 /* Protocol */,
 			);
 			path = MovieSearch;
+			sourceTree = "<group>";
+		};
+		9A8AD98E260A725E00F19DB0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD993260A72F600F19DB0 /* MovieSearchProtocol.swift */,
+			);
+			name = Protocol;
+			path = "Protocolç";
+			sourceTree = "<group>";
+		};
+		9A8AD98F260A729A00F19DB0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD997260A759400F19DB0 /* MovieSearchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9A8AD990260A72A300F19DB0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD99B260A767E00F19DB0 /* MovieSearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A8AD991260A72A900F19DB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD99D260A7C1A00F19DB0 /* MovieSearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A8AD992260A72B300F19DB0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD999260A761C00F19DB0 /* MovieSearchInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,9 +513,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8AD996260A740B00F19DB0 /* Movie.swift in Sources */,
 				9A8AD978260A473500F19DB0 /* Endpoint.swift in Sources */,
 				9A8AD976260A473500F19DB0 /* DataTransferService.swift in Sources */,
 				9A8AD9652609420600F19DB0 /* LoginViewController.swift in Sources */,
+				9A8AD99C260A767E00F19DB0 /* MovieSearchPresenter.swift in Sources */,
 				9A8AD96F260999E900F19DB0 /* Constants.swift in Sources */,
 				9A8AD98B260A587500F19DB0 /* DataSourceManager.swift in Sources */,
 				9A8AD963260941FA00F19DB0 /* LoginPresenter.swift in Sources */,
@@ -468,7 +529,11 @@
 				9A8AD989260A51A600F19DB0 /* MoviesResponse.swift in Sources */,
 				9A8AD95F26093A4A00F19DB0 /* LoginProtocol.swift in Sources */,
 				9A8AD9672609421400F19DB0 /* LoginInteractor.swift in Sources */,
+				9A8AD99A260A761C00F19DB0 /* MovieSearchInteractor.swift in Sources */,
+				9A8AD994260A72F600F19DB0 /* MovieSearchProtocol.swift in Sources */,
 				9A8AD981260A4A1200F19DB0 /* AppDIContainer.swift in Sources */,
+				9A8AD99E260A7C1A00F19DB0 /* MovieSearchViewController.swift in Sources */,
+				9A8AD998260A759400F19DB0 /* MovieSearchRouter.swift in Sources */,
 				9A8AD9242609325E00F19DB0 /* AppDelegate.swift in Sources */,
 				9A8AD979260A473500F19DB0 /* NetworkConfig.swift in Sources */,
 				9A8AD961260941F000F19DB0 /* LoginRouter.swift in Sources */,
