@@ -14,9 +14,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SXy-XJ-TYr">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Ya-RJ-fe4"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZK-zX-bdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +39,7 @@
                                     <constraint firstAttribute="height" constant="34" id="zpM-Xk-g6F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rb1-4F-s7z">
                                 <rect key="frame" x="20" y="293.5" width="374" height="20.5"/>
@@ -56,7 +53,7 @@
                                     <constraint firstAttribute="height" constant="34" id="w3j-tO-6vU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Incorrecto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyx-Bx-gkW">
                                 <rect key="frame" x="144.5" y="393" width="125" height="21"/>
@@ -70,6 +67,9 @@
                                     <constraint firstAttribute="height" constant="40" id="D3e-TH-dl7"/>
                                 </constraints>
                                 <state key="normal" title="INGRESAR"/>
+                                <connections>
+                                    <action selector="loginApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a83-P4-Wxn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -95,6 +95,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="HJT-Lm-YFw"/>
+                    <connections>
+                        <outlet property="incorrectLoginLabel" destination="Eyx-Bx-gkW" id="yFt-D9-6vJ"/>
+                        <outlet property="passwordTextField" destination="KTg-Ny-Is9" id="b7u-D0-EN0"/>
+                        <outlet property="userTextField" destination="LQ3-YE-V9U" id="WHA-o1-CrL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

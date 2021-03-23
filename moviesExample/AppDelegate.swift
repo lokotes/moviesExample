@@ -16,13 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = LoginRouter().createView()
         let navigation = UINavigationController(rootViewController: viewController)
+        navigation.setNavigationBarHidden(true, animated: false)
         self.window?.rootViewController = navigation
-
         window!.makeKeyAndVisible()
-        
         
         return true
     }
+    
 
 }
-
