@@ -6,4 +6,23 @@
 //  Copyright © 2021 everis. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class LoginViewController: UIViewController {
+
+    var presenter: LoginViewPresenterProtocol?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
+extension LoginViewController: LoginViewProtocol {
+    func failLogin() {
+        
+    }
+    
+}

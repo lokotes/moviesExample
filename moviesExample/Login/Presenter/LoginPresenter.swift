@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+class LoginPresenter: LoginViewPresenterProtocol {
+    var interactor: LoginInteractorProtocol?
+    var view: LoginViewProtocol?
+    var router: LoginRouterProtocol?
+    
+    func loginToApp(user: String, password: String) {
+        interactor?.validateCredentials(user: user, password: password)
+    }
+}
+
+extension LoginPresenter: LoginPresenterProtocol {
+    func validateSuccessLogin() {
+        router?.goToHomeSearch()
+    }
+    
+    func failInValidateCredentials() {
+        view?.failLogin()
+    }
+}
+

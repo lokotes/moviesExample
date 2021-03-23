@@ -40,4 +40,5 @@ protocol LoginViewProtocol: class {
 /// PRESENTER - ROUTER
 protocol LoginRouterProtocol: class {
     func createView() -> UIViewController
+    func goToHomeSearch()
 }

@@ -20,6 +20,7 @@
 		9A8AD963260941FA00F19DB0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD962260941FA00F19DB0 /* LoginPresenter.swift */; };
 		9A8AD9652609420600F19DB0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD9642609420600F19DB0 /* LoginViewController.swift */; };
 		9A8AD9672609421400F19DB0 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD9662609421400F19DB0 /* LoginInteractor.swift */; };
+		9A8AD9692609981F00F19DB0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD9682609981F00F19DB0 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		9A8AD962260941FA00F19DB0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		9A8AD9642609420600F19DB0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9A8AD9662609421400F19DB0 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9A8AD9682609981F00F19DB0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				9A8AD92C2609326500F19DB0 /* Assets.xcassets */,
 				9A8AD92E2609326500F19DB0 /* LaunchScreen.storyboard */,
 				9A8AD9312609326500F19DB0 /* Info.plist */,
+				9A8AD9682609981F00F19DB0 /* Utils.swift */,
 			);
 			path = moviesExample;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 		9A8AD95A260936CA00F19DB0 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD96A260998B300F19DB0 /* New Group */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -213,6 +217,13 @@
 				9A8AD95E26093A4A00F19DB0 /* LoginProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9A8AD96A260998B300F19DB0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 			files = (
 				9A8AD9652609420600F19DB0 /* LoginViewController.swift in Sources */,
 				9A8AD963260941FA00F19DB0 /* LoginPresenter.swift in Sources */,
+				9A8AD9692609981F00F19DB0 /* Utils.swift in Sources */,
 				9A8AD9282609325E00F19DB0 /* ViewController.swift in Sources */,
 				9A8AD95F26093A4A00F19DB0 /* LoginProtocol.swift in Sources */,
 				9A8AD9672609421400F19DB0 /* LoginInteractor.swift in Sources */,
