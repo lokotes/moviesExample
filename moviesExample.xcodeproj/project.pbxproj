@@ -133,11 +133,11 @@
 		9A8AD9222609325E00F19DB0 /* moviesExample */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD98C260A667B00F19DB0 /* Modules */,
 				9A8AD97A260A484400F19DB0 /* Application */,
 				9A8AD96B2609996500F19DB0 /* Helper */,
 				9A8AD95C2609374A00F19DB0 /* Model */,
 				9A8AD95B2609371C00F19DB0 /* Service */,
-				9A8AD9532609367400F19DB0 /* Login */,
 				9A8AD9272609325E00F19DB0 /* ViewController.swift */,
 				9A8AD9292609325E00F19DB0 /* Main.storyboard */,
 				9A8AD92C2609326500F19DB0 /* Assets.xcassets */,
@@ -213,10 +213,9 @@
 		9A8AD95A260936CA00F19DB0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD98A260A587500F19DB0 /* DataSourceManager.swift */,
 				9A8AD982260A504C00F19DB0 /* APIEndpoints.swift */,
 				9A8AD970260A473500F19DB0 /* Infrastructure */,
-				9A8AD96A260998B300F19DB0 /* New Group */,
-				9A8AD98A260A587500F19DB0 /* DataSourceManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -243,13 +242,6 @@
 				9A8AD95E26093A4A00F19DB0 /* LoginProtocol.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		9A8AD96A260998B300F19DB0 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		9A8AD96B2609996500F19DB0 /* Helper */ = {
@@ -283,9 +275,9 @@
 		9A8AD97A260A484400F19DB0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD9232609325E00F19DB0 /* AppDelegate.swift */,
 				9A8AD97B260A4A1200F19DB0 /* AppConfigurations.swift */,
 				9A8AD97C260A4A1200F19DB0 /* DIContainer */,
-				9A8AD9232609325E00F19DB0 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -313,6 +305,22 @@
 				9A8AD988260A51A600F19DB0 /* MoviesResponse.swift */,
 			);
 			path = Rest;
+			sourceTree = "<group>";
+		};
+		9A8AD98C260A667B00F19DB0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD98D260A668E00F19DB0 /* MovieSearch */,
+				9A8AD9532609367400F19DB0 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9A8AD98D260A668E00F19DB0 /* MovieSearch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

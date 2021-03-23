@@ -9,6 +9,7 @@
 import Foundation
 
 struct MoviesQueryParam: Encodable {
+    let searchText: String
     let api_key: String
     let page: Int
 }

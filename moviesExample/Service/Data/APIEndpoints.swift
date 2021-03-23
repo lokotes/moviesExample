@@ -11,7 +11,7 @@ struct APIEndpoints {
     
     static func getMovies(with moviesQueryParam: MoviesQueryParam) -> Endpoint<MoviesResponse> {
 
-        return Endpoint(path: "3/movie/upcoming",
+        return Endpoint(path: "3/search/movie/",
                         method: .get,
                         queryParametersEncodable: moviesQueryParam)
     }
