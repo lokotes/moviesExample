@@ -10,7 +10,10 @@ import UIKit
 
 class MovieSearchViewController: UIViewController {
 
+    @IBOutlet weak var moviesSearchBar: UISearchBar!
+    @IBOutlet weak var moviesTableView: UITableView!
     var presenter: MovieSearchViewPresenterProtocol?
+    var movies: [Movie] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +24,30 @@ class MovieSearchViewController: UIViewController {
 
 }
 
+extension MovieSearchViewController: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCellID") as? MovieTableViewCell
+        cell?.movieLabel.text = movies[indexPath.row].name
+        return cell!
+    }
+    
+}
+
+extension MovieSearchViewController: UISearchBarDelegate{
+}
+
 extension MovieSearchViewController: MovieSearchViewProtocol{
     func failInSearch() {
         
     }
     
     func showMoviesInSearch(movies: [Movie]) {
-        
+        self.movies = movies
+        moviesTableView.reloadData()
     }
     
     

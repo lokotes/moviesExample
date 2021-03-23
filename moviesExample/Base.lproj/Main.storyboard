@@ -124,15 +124,47 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7eT-66-ULl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCellID" id="7eT-66-ULl" customClass="MovieTableViewCell" customModule="moviesExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7eT-66-ULl" id="bqh-bV-iq2">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eV0-b6-SkU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbT-km-DA7">
+                                                            <rect key="frame" x="20" y="10" width="374" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="IbT-km-DA7" firstAttribute="leading" secondItem="eV0-b6-SkU" secondAttribute="leading" constant="20" id="1GH-vC-oeY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="IbT-km-DA7" secondAttribute="trailing" constant="20" id="GEb-aE-Mou"/>
+                                                        <constraint firstItem="IbT-km-DA7" firstAttribute="top" secondItem="eV0-b6-SkU" secondAttribute="top" constant="10" id="hhc-fF-ZEP"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eV0-b6-SkU" secondAttribute="bottom" id="BJ0-b9-Vcf"/>
+                                                <constraint firstItem="eV0-b6-SkU" firstAttribute="leading" secondItem="bqh-bV-iq2" secondAttribute="leading" id="RBB-DA-Tbw"/>
+                                                <constraint firstAttribute="trailing" secondItem="eV0-b6-SkU" secondAttribute="trailing" id="kqN-BD-mT4"/>
+                                                <constraint firstItem="eV0-b6-SkU" firstAttribute="top" secondItem="bqh-bV-iq2" secondAttribute="top" id="nFi-V1-lLR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieLabel" destination="IbT-km-DA7" id="793-8y-cm0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nzc-jr-8vI" id="djw-Gj-vBi"/>
+                                    <outlet property="delegate" destination="nzc-jr-8vI" id="1cC-AE-pUY"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -147,6 +179,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G8z-jG-HyZ"/>
                     </view>
+                    <connections>
+                        <outlet property="moviesSearchBar" destination="5SC-ow-Hkg" id="lAH-iC-hUw"/>
+                        <outlet property="moviesTableView" destination="Phv-YS-mmx" id="nEX-M6-BSC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lb3-Sf-G6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

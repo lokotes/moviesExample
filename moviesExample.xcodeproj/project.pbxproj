@@ -38,6 +38,7 @@
 		9A8AD99A260A761C00F19DB0 /* MovieSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD999260A761C00F19DB0 /* MovieSearchInteractor.swift */; };
 		9A8AD99C260A767E00F19DB0 /* MovieSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD99B260A767E00F19DB0 /* MovieSearchPresenter.swift */; };
 		9A8AD99E260A7C1A00F19DB0 /* MovieSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD99D260A7C1A00F19DB0 /* MovieSearchViewController.swift */; };
+		9A8AD9A0260A8C9200F19DB0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD99F260A8C9200F19DB0 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		9A8AD999260A761C00F19DB0 /* MovieSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchInteractor.swift; sourceTree = "<group>"; };
 		9A8AD99B260A767E00F19DB0 /* MovieSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchPresenter.swift; sourceTree = "<group>"; };
 		9A8AD99D260A7C1A00F19DB0 /* MovieSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewController.swift; sourceTree = "<group>"; };
+		9A8AD99F260A8C9200F19DB0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				9A8AD99D260A7C1A00F19DB0 /* MovieSearchViewController.swift */,
+				9A8AD99F260A8C9200F19DB0 /* MovieTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 			files = (
 				9A8AD996260A740B00F19DB0 /* Movie.swift in Sources */,
 				9A8AD978260A473500F19DB0 /* Endpoint.swift in Sources */,
+				9A8AD9A0260A8C9200F19DB0 /* MovieTableViewCell.swift in Sources */,
 				9A8AD976260A473500F19DB0 /* DataTransferService.swift in Sources */,
 				9A8AD9652609420600F19DB0 /* LoginViewController.swift in Sources */,
 				9A8AD99C260A767E00F19DB0 /* MovieSearchPresenter.swift in Sources */,

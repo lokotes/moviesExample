@@ -21,7 +21,7 @@ class MovieSearchPresenter: MovieSearchViewPresenterProtocol {
 
 extension MovieSearchPresenter: MovieSearchPresenterProtocol {
     func didReceivedMovies(movies: [Movie], numberOfPages: Int) {
-        
+        view?.showMoviesInSearch(movies: movies)
     }
     
     func failInSearch() {
