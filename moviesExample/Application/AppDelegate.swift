@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigation = UINavigationController(rootViewController: viewController)
         navigation.setNavigationBarHidden(true, animated: false)
         self.window?.rootViewController = navigation
+        _ = AppConfigurationService.shared
         window!.makeKeyAndVisible()
         
         return true

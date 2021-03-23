@@ -26,6 +26,12 @@
 		9A8AD977260A473500F19DB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD973260A473500F19DB0 /* NetworkService.swift */; };
 		9A8AD978260A473500F19DB0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD974260A473500F19DB0 /* Endpoint.swift */; };
 		9A8AD979260A473500F19DB0 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD975260A473500F19DB0 /* NetworkConfig.swift */; };
+		9A8AD97F260A4A1200F19DB0 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD97B260A4A1200F19DB0 /* AppConfigurations.swift */; };
+		9A8AD981260A4A1200F19DB0 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD97E260A4A1200F19DB0 /* AppDIContainer.swift */; };
+		9A8AD983260A504C00F19DB0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD982260A504C00F19DB0 /* APIEndpoints.swift */; };
+		9A8AD985260A50A800F19DB0 /* MoviesQueryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD984260A50A800F19DB0 /* MoviesQueryParam.swift */; };
+		9A8AD989260A51A600F19DB0 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD988260A51A600F19DB0 /* MoviesResponse.swift */; };
+		9A8AD98B260A587500F19DB0 /* DataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AD98A260A587500F19DB0 /* DataSourceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,12 @@
 		9A8AD973260A473500F19DB0 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9A8AD974260A473500F19DB0 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9A8AD975260A473500F19DB0 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		9A8AD97B260A4A1200F19DB0 /* AppConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		9A8AD97E260A4A1200F19DB0 /* AppDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		9A8AD982260A504C00F19DB0 /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		9A8AD984260A50A800F19DB0 /* MoviesQueryParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesQueryParam.swift; sourceTree = "<group>"; };
+		9A8AD988260A51A600F19DB0 /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		9A8AD98A260A587500F19DB0 /* DataSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +133,11 @@
 		9A8AD9222609325E00F19DB0 /* moviesExample */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD97A260A484400F19DB0 /* Application */,
 				9A8AD96B2609996500F19DB0 /* Helper */,
 				9A8AD95C2609374A00F19DB0 /* Model */,
 				9A8AD95B2609371C00F19DB0 /* Service */,
 				9A8AD9532609367400F19DB0 /* Login */,
-				9A8AD9232609325E00F19DB0 /* AppDelegate.swift */,
 				9A8AD9272609325E00F19DB0 /* ViewController.swift */,
 				9A8AD9292609325E00F19DB0 /* Main.storyboard */,
 				9A8AD92C2609326500F19DB0 /* Assets.xcassets */,
@@ -198,19 +210,21 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		9A8AD95A260936CA00F19DB0 /* DataSource */ = {
+		9A8AD95A260936CA00F19DB0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD982260A504C00F19DB0 /* APIEndpoints.swift */,
 				9A8AD970260A473500F19DB0 /* Infrastructure */,
 				9A8AD96A260998B300F19DB0 /* New Group */,
+				9A8AD98A260A587500F19DB0 /* DataSourceManager.swift */,
 			);
-			path = DataSource;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		9A8AD95B2609371C00F19DB0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				9A8AD95A260936CA00F19DB0 /* DataSource */,
+				9A8AD95A260936CA00F19DB0 /* Data */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -218,6 +232,7 @@
 		9A8AD95C2609374A00F19DB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A8AD986260A50F400F19DB0 /* Entities */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +278,41 @@
 				9A8AD975260A473500F19DB0 /* NetworkConfig.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		9A8AD97A260A484400F19DB0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD97B260A4A1200F19DB0 /* AppConfigurations.swift */,
+				9A8AD97C260A4A1200F19DB0 /* DIContainer */,
+				9A8AD9232609325E00F19DB0 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9A8AD97C260A4A1200F19DB0 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD97E260A4A1200F19DB0 /* AppDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		9A8AD986260A50F400F19DB0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD987260A514B00F19DB0 /* Rest */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9A8AD987260A514B00F19DB0 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AD984260A50A800F19DB0 /* MoviesQueryParam.swift */,
+				9A8AD988260A51A600F19DB0 /* MoviesResponse.swift */,
+			);
+			path = Rest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,15 +450,21 @@
 				9A8AD976260A473500F19DB0 /* DataTransferService.swift in Sources */,
 				9A8AD9652609420600F19DB0 /* LoginViewController.swift in Sources */,
 				9A8AD96F260999E900F19DB0 /* Constants.swift in Sources */,
+				9A8AD98B260A587500F19DB0 /* DataSourceManager.swift in Sources */,
 				9A8AD963260941FA00F19DB0 /* LoginPresenter.swift in Sources */,
+				9A8AD983260A504C00F19DB0 /* APIEndpoints.swift in Sources */,
 				9A8AD96D2609997700F19DB0 /* +String.swift in Sources */,
 				9A8AD9692609981F00F19DB0 /* Utils.swift in Sources */,
+				9A8AD985260A50A800F19DB0 /* MoviesQueryParam.swift in Sources */,
 				9A8AD9282609325E00F19DB0 /* ViewController.swift in Sources */,
+				9A8AD989260A51A600F19DB0 /* MoviesResponse.swift in Sources */,
 				9A8AD95F26093A4A00F19DB0 /* LoginProtocol.swift in Sources */,
 				9A8AD9672609421400F19DB0 /* LoginInteractor.swift in Sources */,
+				9A8AD981260A4A1200F19DB0 /* AppDIContainer.swift in Sources */,
 				9A8AD9242609325E00F19DB0 /* AppDelegate.swift in Sources */,
 				9A8AD979260A473500F19DB0 /* NetworkConfig.swift in Sources */,
 				9A8AD961260941F000F19DB0 /* LoginRouter.swift in Sources */,
+				9A8AD97F260A4A1200F19DB0 /* AppConfigurations.swift in Sources */,
 				9A8AD977260A473500F19DB0 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
