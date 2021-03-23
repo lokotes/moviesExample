@@ -35,7 +35,4 @@ class MovieSearchInteractor: MovieSearchInteractorProtocol {
         })
     }
     
-    
-    
-    
 }

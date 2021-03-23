@@ -28,6 +28,7 @@ class MovieSearchViewController: UIViewController {
         super.viewDidLoad()
 //        presenter?.searchInMovies(search: "a", page: 1)
         moviesSearchBar.delegate = self
+        moviesSearchBar.setShowsCancelButton(true, animated: true)
         // Do any additional setup after loading the view.
     }
     
@@ -87,15 +88,21 @@ extension MovieSearchViewController: UITableViewDataSource, UITableViewDelegate{
 }
 
 extension MovieSearchViewController: UISearchBarDelegate{
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
         setLoadingScreen()
         presenter?.searchInMovies(search: searchBar.text!, page: 1)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar){
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
 extension MovieSearchViewController: MovieSearchViewProtocol{
     func failInSearch() {
         removeLoadingScreen()
+        
     }
     
     func showMoviesInSearch(movies: [Movie]) {
@@ -103,6 +110,4 @@ extension MovieSearchViewController: MovieSearchViewProtocol{
         self.movies = movies
         moviesTableView.reloadData()
     }
-    
-    
 }
