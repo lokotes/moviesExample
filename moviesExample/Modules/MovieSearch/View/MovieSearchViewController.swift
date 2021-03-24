@@ -102,12 +102,33 @@ extension MovieSearchViewController: UISearchBarDelegate{
 extension MovieSearchViewController: MovieSearchViewProtocol{
     func failInSearch() {
         removeLoadingScreen()
-        
+        presentAlert(message: "Error en Busqueda")
     }
     
     func showMoviesInSearch(movies: [Movie]) {
+        if movies.isEmpty {
+            presentAlert(message: "No existen elementos con este nombre")
+        }
         removeLoadingScreen()
         self.movies = movies
         moviesTableView.reloadData()
+    }
+    
+    func presentAlert(message: String){
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+              switch action.style{
+              case .default:
+                    print("default")
+
+              case .cancel:
+                    print("cancel")
+
+              case .destructive:
+                    print("destructive")
+
+
+        }}))
+        self.present(alert, animated: true, completion: nil)
     }
 }

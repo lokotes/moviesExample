@@ -25,7 +25,7 @@ extension MovieSearchPresenter: MovieSearchPresenterProtocol {
     }
     
     func failInSearch() {
-        
+        view?.failInSearch()
     }
     
 }

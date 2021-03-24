@@ -20,7 +20,7 @@ class Movie {
         self.id = movieResponse.id
         self.poster = movieResponse.posterPath ?? ""
         self.name = movieResponse.originalTitle
-        self.release_date = movieResponse.releaseDate
+        self.release_date = movieResponse.releaseDate ?? ""
         self.overView = movieResponse.overview
         self.vote_average = movieResponse.voteAverage
     }
